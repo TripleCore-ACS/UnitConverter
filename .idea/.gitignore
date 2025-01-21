@@ -1,0 +1,21 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Ordner, die ignoriert werden sollen
+node_modules/
+dist/
+
+# macOS-spezifische Dateien
+.DS_Store
+
+# Editor-spezifische Dateien
+.idea/
+.vscode/
+*.iml
+
+# Logs
+npm-debug.log*
+
+# Umgebungsdateien
+.env
