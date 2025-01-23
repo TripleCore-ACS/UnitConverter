@@ -11,13 +11,13 @@
         <form>
             <fieldset>
                 <legend>Unit-Konverter</legend>
-                <h1>Meilen zu Kilometer</h1><br>
+                <h1>Meilen vs. Kilometer</h1><br>
                 <input type="number" placeholder="Zahl eingeben..." id="userInput">
                 <select name="select" id="unit">
                     <option value="milesToKm">Meilen in Kilometer</option>
                     <option value="kmToMiles">Kilometer in Meilen</option>
                 </select><br>
-                <button onclick="convert(event)">Rechne</button>
+                <button id="b1" onclick="convert(event)">Rechne</button>
                 <p>Ergebnis: <span id="resultElement">0</span></p>
                 <script src="src/script.js"></script>
                 <!--<script src="dist/script.min.js" defer></script>--->
