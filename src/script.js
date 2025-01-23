@@ -1,4 +1,7 @@
-const convert = () => {
+const convert = (event) => {
+
+    event.preventDefault();
+
     const resultElement = document.getElementById("resultElement");
 
       const inputValue = parseFloat(document.getElementById("userInput").value);
@@ -9,7 +12,6 @@ const convert = () => {
         return;
       }
 
-      // let milesToKm = unit === "milesToKm";
       let result = 0;
       let resultString = "";
 
@@ -22,6 +24,5 @@ const convert = () => {
         resultString = `${inputValue} Kilometer entsprechen ${result.toFixed(2)} Meilen.`;
       };
 
-      //console.log(resultString);
       resultElement.innerHTML = resultString;
 };

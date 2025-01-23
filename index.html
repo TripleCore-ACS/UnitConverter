@@ -3,18 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="dist/style.css">
+        <link rel="stylesheet" href="src/style.css">
+        <!--<link rel="stylesheet" href="dist/style.css">-->
         <title>UnitConverter</title>
     </head>
     <body>
-        <h1>Einheit-Konverter</h1><br>
-        <input type="number" placeholder="Zahl eingeben..." id="userInput">
-        <select name="select" id="unit">
-            <option value="milesToKm">Meilen in Kilometer</option>
-            <option value="kmToMiles">Kilometer in Meilen</option>
-        </select>
-        <button onclick="convert()">Rechne</button>
-        <p>Ergebnis: <span id="resultElement">0</span></p>
-        <script src="dist/script.min.js" defer></script>
+        <form>
+            <fieldset>
+                <legend>Unit-Konverter</legend>
+                <h1>Meilen zu Kilometer</h1><br>
+                <input type="number" placeholder="Zahl eingeben..." id="userInput">
+                <select name="select" id="unit">
+                    <option value="milesToKm">Meilen in Kilometer</option>
+                    <option value="kmToMiles">Kilometer in Meilen</option>
+                </select><br>
+                <button onclick="convert(event)">Rechne</button>
+                <p>Ergebnis: <span id="resultElement">0</span></p>
+                <script src="src/script.js"></script>
+                <!--<script src="dist/script.min.js" defer></script>--->
+            </fieldset>
+        </form>
     </body>
 </html>
